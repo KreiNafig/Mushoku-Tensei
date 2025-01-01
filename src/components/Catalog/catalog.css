@@ -1,0 +1,48 @@
+.container-hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+}
+
+.list-hero {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 420px;
+    height: 500px;
+    object-fit: cover; 
+}
+
+.listTitle {
+    font-size: 260%;
+    margin-top: 2%;
+    margin-bottom: 3.3%;
+}
+
+.name {
+    font-size: 150%;
+    margin-top: 2%;
+}
+
+.button-hero {
+    margin-top: 2.5%;
+    padding: 2.4%;
+    padding-left: 9%;
+    padding-right: 9%;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    font-weight: 600;
+    font-size: 100%;
+}
