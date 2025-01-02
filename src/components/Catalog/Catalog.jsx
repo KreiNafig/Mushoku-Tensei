@@ -13,19 +13,19 @@ export const Catalog = () => {
         <div className='listTitle'>Список:</div>
         <div className='list-hero'>
             <div className='container-hero'>
-                <img src={sylphy}/>
+                <img src={sylphy} alt='Сильфи'/>
                 <div className='name'>Сильфи</div>
-                <Link className='button-hero'>{info.toUpperCase()}</Link>
+                <Link to='/catalog/sylphy' className='button-hero'>{info.toUpperCase()}</Link>
             </div>
             <div className='container-hero'>
-                <img src={roxy}/>
+                <img src={roxy} alt='Рокси'/>
                 <div className='name'>Рокси</div>
-                <Link className='button-hero'>{info.toUpperCase()}</Link>
+                <Link to='/catalog/roxy' className='button-hero'>{info.toUpperCase()}</Link>
             </div>
             <div className='container-hero'>
-                <img src={eris}/>
+                <img src={eris} alt='Эрис'/>
                 <div className='name'>Эрис</div>
-                <Link className='button-hero'>{info.toUpperCase()}</Link>
+                <Link to='/catalog/eris' className='button-hero'>{info.toUpperCase()}</Link>
             </div>
         </div>
     </div>

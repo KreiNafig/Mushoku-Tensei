@@ -8,9 +8,9 @@ export const Semantica = () => {
         <header>
             <div className="flex_row">
                 <div>
-                    <Link className="font text_row">Главная</Link>
-                    <Link className="font text_row">Контакты</Link>
-                    <Link className="font text_row">Информация</Link>
+                    <Link to='/' className="font text_row">Главная</Link>
+                    <Link to='/catalog' className="font text_row">Каталог</Link>
+                    <Link to='/info' className="font text_row">Информация</Link>
                 </div>
                 <div>
                     <Link className="font text_row">Регистрация</Link>

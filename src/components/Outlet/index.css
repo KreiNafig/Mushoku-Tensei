@@ -91,7 +91,7 @@ footer {
 .flex_row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding-top: 1%;
 }
 
 .text_row {

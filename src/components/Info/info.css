@@ -1,0 +1,21 @@
+.flexInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.titleInfo {
+    font-size: 2vw;
+    font-weight: 600;
+
+}
+
+.infoDescription {
+    font-size: 1.4vw;
+    width: 70%;
+    text-align: center;
+    margin-top: 2%;
+    line-height: 130%;
+}
