@@ -1,9 +1,10 @@
-import React from 'react'
-import './index.css'
-import { Link, Outlet } from 'react-router-dom'
+import React from 'react';
+import './index.css';
+import { Link, Outlet } from 'react-router-dom';
 
 export const Semantica = () => {
   return (
+    <>
     <div className="layout">
         <header>
             <div className="flex_row">
@@ -18,12 +19,13 @@ export const Semantica = () => {
                 </div>
             </div>
         </header>
-        <main className='outlet'>
-            <Outlet/>
+        <main className="outlet">
+            <Outlet />
         </main>
+    </div>
         <footer>
             <p>&copy; 2025 Реинкарнация Безработного. Все права защищены.</p>
         </footer>
-    </div>
-  )
-}
+        </>
+  );
+};

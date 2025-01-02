@@ -9,6 +9,12 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Обеспечивает высоту в 100% от экрана */
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -27,14 +33,11 @@ header .logo img {
     height: 50px;
 }
 
-
-
 .main-section {
-    margin-top: 90px; 
+    margin-top: 90px; /* Отступ, чтобы не перекрывался header */
     position: relative;
-    height: calc(100vh - 90px); 
+    flex-grow: 1; /* Позволяет этому разделу занимать всё оставшееся пространство */
 }
-
 
 .content-overlay {
     position: absolute;
@@ -59,27 +62,10 @@ header .logo img {
     font-size: 20px;
 }
 
-footer {
-    background-color: #242424;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
 .row {
     display: flex;
     justify-content: space-between;
 }
-
-
 
 .font {
     color: white;
@@ -101,3 +87,15 @@ footer {
 .outlet {
     padding-top: 90px;
 }
+
+footer {
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+

@@ -1,0 +1,32 @@
+.containerHeros {
+    display: flex;
+}
+
+.wrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.containerHero {
+    margin-left: 5%;
+    line-height: 120%;
+}
+
+.descriptionHero {
+    margin-top: 5%;
+    font-size: 130%;
+}
+
+.descriptionHero:first-child {
+    margin-top: 0px;
+}
+
+.img-hero {
+    width: max-content;
+    height: 500px;
+    border: 10px solid
+}
+
+.wrapper {
+    margin-top: 2%;
+}

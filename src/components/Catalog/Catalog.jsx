@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import '../Catalog/catalog.css'
 import {Link} from 'react-router-dom'
 import sylphy from '../../img/sylphy.png'

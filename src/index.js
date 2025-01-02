@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import {store} from './redux/store'
 import { Semantica } from './components/Outlet/Outlet';
 import { Home } from './components/Home/Home';
 import { Catalog } from './components/Catalog/Catalog';
@@ -8,6 +9,7 @@ import { Sylphy } from './components/Catalog/Heroes/Sylphy/Sylphy';
 import { Roxy } from './components/Catalog/Heroes/Roxy/Roxy';
 import { Eris } from './components/Catalog/Heroes/Eris/Eris';
 import { Info } from './components/Info/Info';
+import { Provider } from 'react-redux';
 
 
 const router = createBrowserRouter([{
@@ -45,5 +47,7 @@ const router = createBrowserRouter([{
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <RouterProvider router={router} />
+  <Provider store={store}>
+  <RouterProvider router={router} />
+  </Provider>
 );
